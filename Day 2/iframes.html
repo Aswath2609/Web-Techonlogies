@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>IFRAMES</title>
+    <style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+
+    }
+    .container1{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        gap: 15px;
+        padding:20px;
+        max-width: 100px;
+    }
+    .iframe1{
+        width:100%;
+        height:250px;
+        border:5px, solid #fff;
+    }
+    iframe{
+        width:100%;
+        height: 100%;
+        border:none;
+    }
+
+
+    @media(max-width:760px){
+        .container1{
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        }
+    }
+</style>
+    <body>
+        <h1>RED DEAD REDEMPTION II</h1>
+        <div class="gal-container">
+            <div class="iframe-container">
+            <iframe src="https://wallpapercave.com/w/wp3363181" title="Image" height="500px" width="1000px"></iframe>
+        </div>
+        <div class="iframe-container">
+            <iframe src="https://en.wikipedia.org/wiki/Red_Dead_Redemption_2" title="About" height="500px" width="1000px"></iframe>
+        </div>
+        <h2>Youtube IFRAME</h2>
+        <div class="iframe-container">
+            <iframe src="https://www.youtube.com/embed/V8Jl-fuCtrU?si=4vY7rY3uS5_pvJRF" title="Video" height="500px" width="1000px" allow="fullscreen`" loading="lazy"></iframe>
+            
+        </div>
+        <h2>Google Map IFRAME</h2>
+        <div class="iframe-container">
+            <iframe src="https://maps.google.com/maps?q=Austin,Texas&t=&z=13&ie=UTF8&iwloc=&output=embed" title="Map" height="500px" width="1000px"></iframe>
+    </body>
+</html>

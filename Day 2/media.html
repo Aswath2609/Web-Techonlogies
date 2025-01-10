@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>Responsive Media Page</title>
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+                
+            }
+            body{
+                font-family: Arial, sans-serif;
+                line-height: 1.5;
+                background: linear-gradient(120deg,rgb(67, 236, 180),rgb(246, 84, 246));
+                margin: 0;
+                padding: 0;
+            }
+            .grid{
+                padding: 20px;
+                background: #fff;
+                border-radius: 18px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+                text-align: center;
+                box-shadow: black;
+                transition: transform 0.5s,box-shadow 0.5s;
+            }
+            .grid:hover{
+                transform: translateY(-10px);
+                box-shadow: 0 10px 20px black;
+            }
+            .grid h2{
+                color: #333;
+                font-size: 1.3em;
+                margin-bottom: 10px;
+            }
+            footer{
+                text-align: center;
+                padding: 20px;
+                background: #333;
+                color: #fff;
+                font-weight: bold;
+            }
+            .grid p{
+                color: #666;
+                font-size: 1.2em;
+            }
+            header{
+                text-align: center;
+                padding: 50px 22px;
+                background: linear-gradient(130deg,);
+                border-color: #333;
+            }
+            header h1{
+                font-size: 3em;
+                color: #fff;
+                margin-bottom: 35px;
+            }
+            header p{
+                font-size: 1.5em;
+                color: #fff;
+                margin-bottom: 30px;
+            }
+            .mda{
+                display: inline-block;
+                padding: 10px 20px;
+                background: red;
+                color: white;
+                text-decoration: none;
+                font-size: 1.2em;
+                border-radius: 5px;
+                transition: transform 0.5s,box-shadow 0.5s;
+            }
+            header .mda:hover{
+                transform: translateY(-10px);
+                box-shadow: 0 10px 20px black;
+            }
+            .grid-view{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 20px;
+                padding: 50px;
+                max-width: 1150px;
+            }
+            @media(max-width: 1150px){
+                .grid-view{
+                    grid-template-columns: repeat(2,0.8fr);
+                header h1{
+                    font-size: 2.5em;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Tamil Gaming தமிழ் கேமிங்</h1>
+            <p>India's First Gaming Channel </p>
+            <a href="https://www.youtube.com/embed/G5d449NypLY?si=oq-SkVONaVSXb64x"class="mda">Open YouTube</a>
+        </header>
+        <section class="grid-view">
+            <div class="grid">
+                <h2>Discover The First Page</h2>
+                <p>Here is a innovative design which shows the first page </p>
+            </div>
+            <div class="grid">
+                <h2>Discover The Second Page</h2>
+                <p>Here is a innovative design which shows a the second Page</p>
+            </div>
+            <div class="grid">
+                <h2>Discover The Third Page</h2>
+                <p>Here is a innovative design which shows a the third Page</p>
+            </div>
+            <div class="grid">
+                <h2>Discover The Fourth Page</h2>
+                <p>Here is a innovative design which shows a the fourth Page</p>
+            </div>
+            <div class="grid">
+                <h2>Discover The Fifth Page</h2>
+                <p>Here is a innovative design which shows a the fifth Page</p>
+            </div>
+            <div class="grid">
+                <h2>Discover The Sixth Page</h2>
+                <p>Here is a innovative design which shows a the sixth Page</p>
+        </section>
+        <footer>
+            <p>2025 innovative design.All Rights Reserved</p>
+        </footer>
+    </body>
+</html>

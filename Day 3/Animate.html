@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Button glow Animate</title>
+        <style>
+            body{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;    
+                height: 100vh;
+                margin: auto;
+                border: none;
+                background: linear-gradient(120deg,rgb(67, 236, 180),rgb(246, 84, 246));
+                color: blueviolet;
+            }
+            .glow{
+                font-size: 1.5em;
+                padding: 10px 20px;
+                border: black;
+                background: linear-gradient(120deg,greenyellow,rgb(246, 84, 246),greenyellow);
+                color: black;
+                border-radius: 5px;
+                
+                transition: 0.5s;
+                transition: transform 0.5s ease,box-shadow 0.5s ease;
+            }
+            button:hover{
+                box-shadow: 0 0 50px rgb(81, 25, 134);
+                transform: translateY(-10px);
+            }
+            .glow :active{
+                box-shadow: 0 0 50px rgb(14, 1, 27);
+                transform: translateY(-10px);
+            }
+        </style>
+    </head>
+    <body>
+        <button class="glow"><strong>Click me</strong></button>   
+    </body>
+</html>
