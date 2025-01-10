@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p>please enter a number between 1 to 10</p>
+        <input id="val">
+        <button type="button" onclick="myfun()">Submit</button>
+        <p id="demo"></p>
+        <script>
+            function myfun(){
+                let a = document.getElementById("val").value;
+                let x = a.value;
+                if(x >= 1 && x <= 10){
+                    document.getElementById("demo").innerHTML = "Input is correct";
+                }else{
+                    document.getElementById("demo").innerHTML = "Input is incorrect";
+                }
+            }
+        </script>
+    </body>
+</html>

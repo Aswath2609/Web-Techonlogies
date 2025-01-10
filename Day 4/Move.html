@@ -1,0 +1,64 @@
+<html>
+    <style>
+        body{
+            background-color: aqua;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 200px;
+        }
+        #xx{
+            width: 410px;
+            height: 410px;
+            position: relative;
+            background: yellow;
+        }
+        #animate{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+        }
+        button{
+            background-color: black;
+            border: none;
+            color: orangered;
+            font-weight: bolder;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+    </style>
+    <body>
+        <p><button onclick="myMove()">Click Me</button></p>
+        <div id ="xx">
+            <div id="animate">
+
+            </div>
+        </div>
+        <script>
+            function myMove(){
+                let id=null;
+                const obj = document.getElementById("animate");
+                let move = 0;
+                clearInterval(id);
+                id=setInterval(frame,6);
+                //function definition
+                function frame(){
+                    if(move===350){
+                        clearInterval(id);
+                    }else{
+                        move++;
+                        obj.style.top=move+"px";
+                        obj.style.left=move+"px";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
